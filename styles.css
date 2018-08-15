@@ -18,6 +18,8 @@ body {
   text-align: center;
   background-color: white;
   width: 66.66%;
+  box-shadow: 0 22px 50px rgba(14, 21, 47, 0.2),
+    0 8px 20px rgba(14, 21, 47, 0.2);
 }
 
 .col {
@@ -26,9 +28,11 @@ body {
 }
 
 .item-title {
-  font-weight: bold;
   color: #8b95b9;
   text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
 }
 
 .item {
@@ -37,18 +41,20 @@ body {
 
 .item-price {
   color: #85a5d4;
-  font-size: xx-large;
+  font-size: 30px;
+  font-weight: 500;
 }
 .description {
-  color: #d1d2d4;
+  margin: 20px 0;
+  color: #a7a7a7;
 }
 
 .item-price-month {
   font-size: medium;
 }
 .item-image {
-  width: 75px;
-  height: 50px;
+  width: 70px;
+  margin-bottom: 20px;
 }
 
 .item-currency {
