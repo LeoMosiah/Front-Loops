@@ -1,5 +1,6 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,47 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="frame">
-        <h2 class="text-title">SimpleWheels</h2>
-        <h4 class="subtitle">Thanks for your order #2357654, your package will be on it's way shortly.</h4>
         <table class="payment-table">
+            <thead>
+                <tr>
+                    <td>
+                        <h2 class="text-title">SimpleWheels</h2>
+                    </td>
+                    <td>
+                        <a class="account-icon" href="#">
+                            <img src="img/account.svg">
+                        </a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h4 class="subtitle">Thanks for your order #2357654, your package will be on it's way shortly.</h4>
+                    </td>
+                </tr>
+            </thead>
+
             <tr class="payment-table-row">
-                <td class="table-text">Chapelli Vintage Single Speed</td>
-                <td class="table-text">$317</td>
+                <td class="product-description">Chapelli Vintage Single Speed</td>
+                <td class="product-price">$317</td>
             </tr>
             <tr class="payment-table-row">
-                <td class="table-text">Castelli Arenberg Gel Gloves</td>
-                <td class="table-text">$39</td>
+                <td class="product-description">Castelli Arenberg Gel Gloves</td>
+                <td class="product-price">$39</td>
             </tr>
             <tfoot class="payment-table-foot">
                 <tr class="payment-table-row">
                     <td class="table-text">total</td>
-                    <td class="table-text">$356</td>
+                    <td class="product-price">$356</td>
                 </tr>
             </tfoot>
         </table>
+        <img class="background-image" src="img/bicycle.png">
+    </div>
     </div>
 </body>
+
 </html>
