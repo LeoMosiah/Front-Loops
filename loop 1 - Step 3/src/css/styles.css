@@ -1,58 +1,63 @@
 html,
 body {
   height: 100%;
-  font-size: medium;
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: #16a085;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #239f85;
+  font-family: Roboto, sans-serif;
+}
+.container {
+  width: 550px;
+  margin: 100px auto;
 }
 .frame {
-  background-color: white;
-  margin: 0 auto;
+  width: 550px;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  padding: 2em 3em 10em;
   border-radius: 5px;
-  width: 700px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
-.payment-table {
-  padding: 30px;
-  padding-left: 70px;
-  padding-right: 70px;
-  white-space: nowrap;
+.frame::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bicycle.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.account-icon {
-  display: flex;
-  border: solid lightgray 1px;
-  border-radius: 100%;
-  padding: 8px;
+.order {
+  width: 100%;
+}
+.title {
+  text-align: left;
 }
 .subtitle {
-  color: lightgrey;
+  font-size: 0.9em;
+  color: darkgray;
 }
-.payment-table-foot {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.payment-table-row > td {
-  padding-bottom: 1.5em;
-}
-.product-description,
-.product-price {
-  font-size: 1.1em;
-}
-.product-description {
-  color: dimgrey;
-  font-weight: 500;
+.item {
   line-height: 2.5;
 }
-.product-price {
-  color: black;
-  font-weight: 700;
+.item-name,
+.total {
+  color: dimgrey;
 }
-.background-image {
-  width: 100%;
-  height: auto;
-  padding: 0;
+.item-price,
+.total-price {
+  text-align: right;
+}
+.total,
+.item-price,
+.total-price {
+  text-transform: uppercase;
+  font-weight: 500;
 }
