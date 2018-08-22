@@ -13,13 +13,14 @@ body {
 .frame {
   background-color: white;
   margin: 0 auto;
-  padding: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
-  width: 33.33%;
   border-radius: 5px;
+  width: 700px;
 }
 .payment-table {
+  padding: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  white-space: nowrap;
 }
 .account-icon {
   display: flex;
@@ -35,15 +36,16 @@ body {
   font-weight: 700;
 }
 .payment-table-row > td {
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
 }
 .product-description,
 .product-price {
   font-size: 1.1em;
 }
 .product-description {
-  color: gray;
+  color: dimgrey;
   font-weight: 500;
+  line-height: 2.5;
 }
 .product-price {
   color: black;
