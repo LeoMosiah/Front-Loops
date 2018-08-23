@@ -56,10 +56,59 @@ body {
 .item-price,
 .total-price {
   text-align: right;
+  font-weight: 700;
 }
 .total,
 .item-price,
 .total-price {
   text-transform: uppercase;
   font-weight: 500;
+}
+.account-icon {
+  position: absolute;
+  top: 3em;
+  right: 3em;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.account-icon,
+.account-icon-main,
+.account-icon-halo {
+  border-radius: 100%;
+}
+
+.account-icon-main,
+.account-icon-halo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.account-icon-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid gainsboro;
+  z-index: 2;
+}
+
+.account-icon-halo {
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  transition: .3s;
+  z-index: 1;
+}
+.account-icon-image{
+  background: url(../img/account.svg) no-repeat center;
+  background-size: 100%;
+  width: 60%;
+  height: 60%;
+}
+.account-icon:hover .account-icon-halo{
+  transform: scale(1.05);
 }
